@@ -4,7 +4,6 @@ import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import './App.css'
 import Riddle from './pages/Riddle'
-import Congrats from './pages/congrats'
 import riddleImg from './assets/riddle_img.png'
 
 function App() {
