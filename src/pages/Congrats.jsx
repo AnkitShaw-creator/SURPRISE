@@ -25,7 +25,7 @@ export default function Congrats() {
     return (
         <div>
             <h1>Well done Detective!</h1>
-            <p>{ !showMessage ? 'We did it, we found the stolen items! Your help was invaluable in solving the case. The items stolen were actually meant for a special someone.'+
+            <p>{ !showMessage ? 'We did it, we found the stolen items! Your help was invaluable in solving the case. The items stolen were actually meant for a special someone. '+
                 'Do you wanna know for whom they were meant????': 'Hope you like what you see ;)'}</p>
             <button className="counter" onClick={handleButtonClick}>
                 Yes, tell me!!!
