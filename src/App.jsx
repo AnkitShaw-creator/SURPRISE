@@ -12,6 +12,7 @@ function App() {
     setRiddleCompleted(state)
     setShowRiddle(false)
   }
+  const initialHeading = "Please help me! :'''("
   const [buttonText, setButtonText] = useState('Start the investigation!')
   const [count, setCount] = useState(0)
   const [riddleCompleted, setRiddleCompleted] = useState(false)
@@ -32,15 +33,16 @@ function App() {
     }
   }
   
+
   return (
     <>
       <section id="center">
         <div className="hero">
-          <img src={riddleImg} className="base" width="170" height="179" alt="" />
+          <img src={riddleImg} className="base" alt="" />
         </div>
         {showRiddle ? <Riddle riddleState={handleState} /> :
           <div>
-            <h1>Please help me! :'''(</h1>
+            <h1>{initialHeading}</h1>
               <code className='header_message'>
                 <p>{message}</p>
             </code>
