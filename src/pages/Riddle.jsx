@@ -50,7 +50,7 @@ export default function Riddle() { //pass the riddle state to the main component
             // if the answer is wrong, show an alert and reset the answer and hints
             showWrongAnswerAlert()
             setAnswer('')
-            setHints('')
+            setHints('');
         }
         else {
             // if the answer is correct, move to the next riddle and reset the answer and hints
