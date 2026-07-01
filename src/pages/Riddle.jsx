@@ -1,7 +1,7 @@
 import './Riddle.css';
 import { useState, Fragment } from 'react';
 import qbank from '../assets/questionbank'
-import Congrats from './congrats';
+import Congrats from './Congrats';
 import Swal from 'sweetalert2'
 import withReactContent from 'sweetalert2-react-content'
 import gif from '../assets/wrongAnswer.gif'
