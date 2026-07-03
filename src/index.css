@@ -28,6 +28,19 @@
   @media (max-width: 1024px) {
     font-size: 16px;
   }
+    /* Tablet screens and up */
+    @media (min-width: 768px) {
+        flex-direction: row;
+        /* Horizontal layout on wider displays */
+    }
+  
+    /* Large desktop screens */
+    @media (min-width: 1024px) {
+        max-width: 1200px;
+        /* Limits expansion on massive monitors */
+        margin: 0 auto;
+        /* Centers layout */
+    }
 }
 
 @media (prefers-color-scheme: dark) {

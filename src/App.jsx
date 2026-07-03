@@ -32,23 +32,29 @@ function App() {
       setRiddleCompleted(false)
     }
   }
-  
+  const backgroundStory = "It all happened this morning. I went out to get some groceries and when I came back, I was astonished to find that the front door of my house was unlocked. " +
+    "When I went inside, everything was hither and thither. It took me a while to realize what had happened, someone had broken into my house. " +
+    "The thief has stolen my most valuable items. I have no idea who could have done this. But I know that only you can help me find the thief and recover my stolen items. " +
+    "Please help me, Detective!"
 
   return (
     <>
       <section id="center">
-        <div className="hero">
+        <div className="main_img_container">
           <img src={riddleImg} className="base" alt="" />
         </div>
         {showRiddle ? <Riddle riddleState={handleState} /> :
           <div>
             <h1>{initialHeading}</h1>
-              <code className='header_message'>
-                <p>{message}</p>
+            <code className='message'>
+              <p>{message}</p>
+            </code>
+            <code className='message'>
+              <p><b>Background Story:</b> {backgroundStory}</p>
             </code>
             <button
               type="button"
-              className="counter"
+              className="start_button"
               onClick={handleClick}
             >
               {buttonText}
