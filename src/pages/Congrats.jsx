@@ -1,7 +1,7 @@
 import './Congrats.css'
 import swal from 'sweetalert2'
 import withReactContent from 'sweetalert2-react-content'
-import surprise from '../assets/surprise.jpg'
+import qrcode from '../assets/surpriseQR.jpg'
 import React from 'react';
 import {useState} from 'react';
 export default function Congrats() {
@@ -10,7 +10,7 @@ export default function Congrats() {
     const showQRAlert = () => {
         qrSwal.fire({
             text: 'Scan the QR code to find out!',
-            imageUrl: surprise,
+            imageUrl: qrcode,
             imageWidth: 300,
             imageHeight: 300,
             theme: 'dark',
